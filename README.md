@@ -1,18 +1,22 @@
 # TxCache: a transactional, self-managing application-level cache
 
 ## Build procedures (to supplement below):
-on ubuntu 12.04
-PG:
-* /pqsql congifure  --prefix=PATHTOTXCACHESRC/pg
+on ubuntu 12.04 
+
+Postgres installation in pgql
+* make a dir 'pg' in the txcache dir
+* congifure  --prefix=PATHTOTXCACHESRC/pg
 * make
 * you'll need bison and flex to make pgsql (if spt-get bison doesn't work, download the tarball for ubuntu 12.04 specfically)
 * most other dependencies will be obvious
 * make check
 * make install
 * ensure that postgres is installed to a folder called 'pg' in txcache. copy that folder to /src as well
+
 SRC:
 * make
 * make check
+* should complete without errors
 ----
 
 This is the implementation of the TxCache system, as described in the
