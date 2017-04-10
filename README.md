@@ -3,8 +3,9 @@
 ## Build procedures (to supplement below):
 on ubuntu 12.04 
 
-Postgres installation in pgql
+Postgres installation in pgsql:
 * make a dir 'pg' in the txcache dir
+* in /pgsql:
 * congifure  --prefix=PATHTOTXCACHESRC/pg
 * make
 * you'll need bison and flex to make pgsql (if spt-get bison doesn't work, download the tarball for ubuntu 12.04 specfically)
